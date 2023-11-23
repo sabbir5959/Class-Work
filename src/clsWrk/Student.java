@@ -39,13 +39,18 @@ class main {
 
 //          STAGE............................................................................................
 
+//          NEW STAGE............................
 //    public void victim_email(ActionEvent event) throws IOException {
 //        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("FXML/VICTIM/FORGOT/forgotPass.fxml"));
 //        Global.createStage(fxmlLoader);
 //    }
+
+//          CLOSE SCENE............................
 //    public void close(ActionEvent event) throws IOException {
 //        Global.closeStage(CLOSE);
 //    }
+
+//          SWITCH SCENE............................
 //    public void victim_otp_verify(ActionEvent event) throws IOException {
 //        Parent root = FXMLLoader.load(HelloApplication.class.getResource("FXML/VICTIM/FORGOT/OTP.fxml"));
 //        Global.switch_scene(root,event);
@@ -54,7 +59,7 @@ class main {
 
 //      TIMELINE ERROR SHOW...................................................................................
 
-//error_text1.setText("Password doesn't match");
+//        error_text1.setText("Password doesn't match");
 //        Timeline timeline = new Timeline(new KeyFrame(Duration.millis(3000), ae -> error_text1.setText("")));
 //        timeline.play();
 
@@ -62,7 +67,7 @@ class main {
 
 //      GLOBAL STAGE...........................................................................................
 
-//public class Global {
+//    public class Global {
 //    private static Scene scene;
 //    private Parent root;
 //    private Stage stage;
@@ -96,3 +101,74 @@ class main {
 //        stage.close();
 //    }
 //}
+
+
+
+
+
+
+
+/*
+
+public class FileIO {
+
+    /**
+     * @param args the command line arguments
+     *//*
+    public static void main(String[] args) {
+        // TODO code application logic here
+        File obj = new File("E:\\File1.txt");
+
+        try {
+            Scanner read= new Scanner(obj);
+            while(read.hasNextLine()){
+                String Data= read.nextLine();
+                System.out.println(Data);
+            }*/
+
+
+            /*if(obj.exists()){
+            System.out.println("Get Name " + obj.getName());
+            System.out.println("Get Path " + obj.getAbsolutePath());
+            System.out.println("Readable " + obj.canRead());
+            System.out.println("Writable " + obj.canWrite());
+            System.out.println("File length " + obj.length());
+            }
+            else{
+            System.out.println("Does not exist" );
+            }
+
+            try {
+            FileWriter obj1= new FileWriter("E:\\File1.txt");
+            obj1.write("Good.\n They are responsible.");
+            obj1.append("Excellent.\n ");
+            obj1.close();
+
+            } catch (IOException ex) {
+            System.out.println("Can't access");
+            Logger.getLogger(FileIO.class.getName()).log(Level.SEVERE, null, ex);
+            }*/
+            /*try {
+            if(obj.createNewFile()){
+            System.out.println("File Created "+ obj.getName());
+            }
+            else{
+            System.out.println("Failed");
+            }
+            } catch (IOException ex) {
+            System.out.println("An error occured");
+            ex.printStackTrace();
+            }*//*
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(FileIO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+
+
+
+    }
+
+}
+ */
+
+
